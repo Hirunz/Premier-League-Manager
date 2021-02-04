@@ -1,0 +1,15 @@
+# routes to get and send data from the backend to the frontend
+GET     /clubs                           controllers.ClubsController.getLeagueTable()
+GET     /clubs/:clubId                   controllers.ClubsController.getClubData(clubId: Int)
+#
+GET     /matches                     controllers.MatchController.getMatchTable()
+GET     /matches/:date                     controllers.MatchController.getMatchByDate(date: String)
+GET     /randomMatch                      controllers.MatchController.getRandomMatch()
+
+#
+GET     /sort/goals                      controllers.SortController.getSortByGoals()
+GET     /sort/wins                      controllers.SortController.getSortByWins()
+GET     /sort/default                      controllers.SortController.getDefaultSort()
+
+
+
